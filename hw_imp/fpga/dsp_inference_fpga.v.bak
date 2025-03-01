@@ -1,0 +1,45 @@
+module top (
+    // Clock & Reset
+    input  wire        CLOCK_50,     // 50 MHz clock input from board
+    input  wire        RESET_n,      // Active-low reset input from board
+    
+    // UART Interface
+    input  wire        UART_RXD,     // Receive data from USB-Blaster UART
+    output wire        UART_TXD,     // Transmit data to USB-Blaster UART
+    
+    // User Interface
+    output wire [9:0]  LED,          // 10 LEDs for status/debugging
+    
+    // Optional: Add more I/O as needed for your application
+    // input  wire [1:0]  KEY,       // Pushbuttons (if needed)
+    // input  wire [9:0]  SW,        // Switches (if needed)
+    // output wire [7:0]  HEX0,      // 7-segment display (if needed)
+    // output wire [7:0]  HEX1       // 7-segment display (if needed)
+);
+
+    //=======================================================
+    // Instantiate the Qsys-generated NIOS II System
+    //=======================================================
+    nios_system u0 (
+        // Clock and Reset
+        .clk_clk           (CLOCK_50),
+        .reset_reset_n     (RESET_n),
+        
+        // UART Interface
+        .uart_0_rxd        (UART_RXD),
+        .uart_0_txd        (UART_TXD),
+        
+        // User Interface
+        .pio_leds_export   (LED)
+        
+        // Optional: Connect additional I/O as needed
+        // .pio_keys_export  (KEY),
+        // .pio_switches_export (SW),
+        // .pio_hex0_export  (HEX0),
+        // .pio_hex1_export  (HEX1)
+    );
+
+    // Optional: Add any top-level logic if needed
+    // For example, debouncing circuits for buttons, etc.
+
+endmodule
