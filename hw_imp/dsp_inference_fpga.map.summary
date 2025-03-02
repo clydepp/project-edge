@@ -1,10 +1,10 @@
-Analysis & Synthesis Status : Successful - Sat Mar 01 16:24:47 2025
+Analysis & Synthesis Status : Successful - Sat Mar 01 20:15:48 2025
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : dsp_inference_fpga
 Top-level Entity Name : dsp_inference_fpga
 Family : MAX 10
-Total logic elements : 1,999
-    Total combinational functions : 1,764
+Total logic elements : 1,992
+    Total combinational functions : 1,757
     Dedicated logic registers : 1,051
 Total registers : 1051
 Total pins : 63

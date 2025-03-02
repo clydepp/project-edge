@@ -1,12 +1,12 @@
-Fitter Status : Successful - Sat Mar 01 16:25:04 2025
+Fitter Status : Successful - Sat Mar 01 20:16:00 2025
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : dsp_inference_fpga
 Top-level Entity Name : dsp_inference_fpga
 Family : MAX 10
 Device : 10M50DAF484C7G
 Timing Models : Final
-Total logic elements : 1,930 / 49,760 ( 4 % )
-    Total combinational functions : 1,770 / 49,760 ( 4 % )
+Total logic elements : 1,931 / 49,760 ( 4 % )
+    Total combinational functions : 1,763 / 49,760 ( 4 % )
     Dedicated logic registers : 1,043 / 49,760 ( 2 % )
 Total registers : 1043
 Total pins : 63 / 360 ( 18 % )

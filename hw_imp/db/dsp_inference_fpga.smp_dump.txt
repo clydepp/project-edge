@@ -7,3 +7,10 @@ DRsize.010 0 0 0 1 0 1
 DRsize.011 0 0 1 0 0 1 
 DRsize.100 0 1 0 0 0 1 
 DRsize.101 1 0 0 0 0 1 
+
+State Machine - |dsp_inference_fpga|uart_receiver:uart_inst|state
+Name state.STOP_BIT state.DATA_BITS state.START_BIT state.IDLE 
+state.IDLE 0 0 0 0 
+state.START_BIT 0 0 1 1 
+state.DATA_BITS 0 1 0 1 
+state.STOP_BIT 1 0 0 1 
